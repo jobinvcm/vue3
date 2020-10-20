@@ -24,6 +24,7 @@ export default {
 <style scoped>
 .form-input {
   position: relative;
+  margin-bottom: 1rem;
 }
 
 input {
@@ -38,6 +39,8 @@ input {
   padding: 1rem;
   background-color: #ffffff;
   border: 1px solid #5c656c;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 input ~ label {
