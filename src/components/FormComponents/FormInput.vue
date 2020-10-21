@@ -2,7 +2,8 @@
   <div class="form-input">
     <input
       :type="inputType"
-      @input="(e) => $emit('update:modelValue', e.target.value)"
+      @input="(e) => $emit('on-change', e.target.value, name)"
+      :name="name"
       :id="id"
       :placeholder="placeholder"
     />
@@ -16,7 +17,8 @@ export default {
   props: {
     inputType: { type: String, default: "text" },
     placeholder: { type: String, default: "Placeholder Here" },
-    id: {type: String}
+    id: { type: String },
+    name: { type: String },
   },
 };
 </script>

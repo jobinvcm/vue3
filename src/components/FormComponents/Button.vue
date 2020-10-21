@@ -1,21 +1,21 @@
 <template>
-  <button :type="type">{{label}}</button>
+  <button :type="type" @click="(e) => $emit('on-click', e)">{{ label }}</button>
 </template>
 
 <script>
 export default {
-  name: 'Button',
+  name: "Button",
   props: {
     type: {
-      default: 'submit',
-      type: String
+      default: "submit",
+      type: String,
     },
     label: {
       type: String,
-      default: 'Button'
-    }
-  }
-}
+      default: "Button",
+    },
+  },
+};
 </script>
 
 <style scoped>

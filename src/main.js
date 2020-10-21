@@ -4,5 +4,5 @@ import App from './App.vue'
 
 var app = createApp(App)
 app.use(router)
-
+app.config.performance = true
 app.mount('#app')
